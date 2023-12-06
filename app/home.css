@@ -1,0 +1,57 @@
+main {
+  padding: 0 10rem;
+  text-align: center;
+}
+
+main h1 {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#card_container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.book_card {
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 11.5rem;
+  height: 20rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book_card_img {
+  padding: 2rem;
+  height: 80%;
+  overflow: hidden;
+}
+
+.book_card_img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.book_card_body {
+  text-align: left;
+}
+.book_card_body a:hover {
+  text-decoration: underline;
+}
+.book_card_body .span_author {
+  color: rgb(105, 105, 105);
+}
+
+.book_card_body h3 {
+  font-size: 1rem;
+}
+
+.book_card_body .span_price {
+  color: #d6420b;
+  font-weight: 600;
+}
