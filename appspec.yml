@@ -1,24 +1,13 @@
 version: 0.1
-
 OS: linux
-
 files:
   - source: /
     destination: /home/ec2-user/project
-
-permissions:
-  - object: /
-    pattern: "**"
-    owner: ec2-user
-    group: ec2-user
-
 hooks:
-
   AfterInstall:
     - location: scripts/after_install.sh
       timeout: 300
       runas: ec2-user
-
   ApplicationStart:
     - location: scripts/start_app.sh
       timeout: 300
