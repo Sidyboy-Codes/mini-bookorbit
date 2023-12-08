@@ -1,26 +1,35 @@
 .book_page{
-    padding: 4rem 10rem;
+    /* border: 1px solid red; */
+    padding: 4rem 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 4rem;
 }
 
 .book_page img{
-    width: 20rem;
+    /* border: 1px solid red; */
+    width: 14rem;
+    margin: auto;
 }
 .book_page h1{
     font-size: 1.6rem;
 }
 
 .book_details{
+    /* border: 1px solid red; */
+    width: 21rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem
+    gap: 2rem;
+    /* padding: 0 4rem; */
 }
 
 .book_overview{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    /* text-align: justify; */
 }
 .author_name span{
     font-weight: 500;
@@ -36,7 +45,7 @@
 }
 
 .add_btns button{
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 1.4rem;
     border-radius: 0.2rem;
 }
 
@@ -66,4 +75,25 @@
     font-size: 2rem;
     font-weight: 500;
     color: #d6420b;
+}
+
+@media(width>=768px){
+    .book_page{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 4rem;
+    }
+    .book_details{
+        width: unset;
+    }
+
+    .add_btns button{
+        padding: 0.8rem 4rem;
+    }
+}
+
+@media(width>=1080px){
+    .book_page{
+        padding: 4rem 8rem 8rem 4rem;
+    }
 }
