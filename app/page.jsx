@@ -1,5 +1,6 @@
 import db from "@/aws-config";
 import { ScanCommand } from "@aws-sdk/client-dynamodb";
+import { Span } from "next/dist/trace";
 import Link from "next/link";
 import "./home.css";
 
@@ -12,7 +13,10 @@ export default async function Home() {
   books = books.Items;
   return (
     <main>
-      <h1>Best Sellers</h1>
+      <div className="heading">
+        <h1><span>Our</span></h1>
+        <h1>Best Seller<span>.</span></h1>
+      </div>
 
       <div id="card_container">
         {books.map((book) => {

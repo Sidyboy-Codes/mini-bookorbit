@@ -24,6 +24,8 @@ button {
   cursor: pointer;
 }
 
+/* Navbar */
+
 nav {
   background-color: rgba(255, 255, 255, 0.679);
   backdrop-filter: blur(20px);
@@ -32,7 +34,15 @@ nav {
   border-bottom: 1px solid rgb(210, 210, 210);
   position: sticky;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+
+nav button{
+  padding: 0.4rem 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
 }

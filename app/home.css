@@ -4,9 +4,18 @@ main {
   padding-bottom: 6.4rem;
 }
 
-main h1 {
-  margin: 2rem;
-  font-size: 1.2rem;
+main .heading{
+
+  margin: 2rem; 
+}
+
+main .heading h1{
+  text-align: left;
+  font-size: 4rem;
+}
+
+.heading span{
+  color: #d6420b;
 }
 
 #card_container {
@@ -59,15 +68,17 @@ main h1 {
 }
 
 @media(width>=768px) {
-  main h1{
-    font-size: 1.4rem;
-  }
+
   #card_container{
     padding: 0 2rem;
   }
 }
 
 @media(width>=1080px){
+  main .heading{
+    padding: 0 10rem;
+
+  }
   #card_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
