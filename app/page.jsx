@@ -1,6 +1,5 @@
 import db from "@/aws-config";
 import { ScanCommand } from "@aws-sdk/client-dynamodb";
-import { Span } from "next/dist/trace";
 import Link from "next/link";
 import "./home.css";
 
