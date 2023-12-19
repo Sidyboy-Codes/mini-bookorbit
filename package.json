@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node -r dotenv/config ./seeder.js"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.465.0",
